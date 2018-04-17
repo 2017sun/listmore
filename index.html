@@ -7,20 +7,33 @@
   <style>
     *{margin:0;padding:0;}
     .lists li{
-    height:36px;
+    list-style-type:none;
+    height:40px;
     border:1px solid #ccc;
-    line-heihgt:36px;
+    line-height:40px;
     padding-left:20px;
+    margin:14px
     }
      .lists li:hover{
-     background-colot:green;
+     background-color:green;
      }
+    #btn{      
+    maragin-top:14px;
+    margin:0 auto;
+    }
+    #btn a{
+    padding:14px;
+    display:block;
+    cursor:pointer;
+    color:red;
+    }
   </style>
 </head>
 <body>
 <ul class="lists">
 <li>内容1</li>
 <li>内容2</li>
+  <div><a id="btn">加载更多</a></div>
 </ul>
 </body>
 </html>
