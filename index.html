@@ -45,12 +45,12 @@
    console.log(btn);
     var xhr=new XMLHttpRequest();
     xhr.onreadystatechange=function(){
-      if(xhr.readyState===4&&(status===200)||status====304){
+      if(xhr.readyState===4&&(status===200||status===304){
       var result=JSON.parse(xhr.responseText);
         console.log(result);
       }
     }
-    xhr.open("get","/loadmore?index=0&length=5",true);
+    xhr.open("get","/listmore/loadmore?index=0&length=5",true);
    xhr.send()
   })
   </script>
