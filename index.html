@@ -39,16 +39,19 @@
 </ul>
 </body>
   <script>
-  var btn=document.getquerySelector(".btn");
+  var btn=document.getquerySelector("#btn");
+   console.log(btn);
   btn.addEventListener("click",function(){
+   console.log(btn);
     var xhr=XMLHttpRequest();
     xhr.onreadystatechange=function(){
-      if(xhr.readyState=4&&(status=200)||status=304){
+      if(xhr.readyState===4&&(status===200)||status====304){
       var result=JSON.parse(xhr.responseText);
         console.log(result);
       }
     }
     xhr.open("get","/loadmore?index=0&length=5",true);
+   xhr.send()
   })
   </script>
 </html>
