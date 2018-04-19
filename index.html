@@ -43,7 +43,7 @@
    console.log(btn);
   btn.addEventListener("click",function(){
    console.log(btn);
-    var xhr=XMLHttpRequest();
+    var xhr=new XMLHttpRequest();
     xhr.onreadystatechange=function(){
       if(xhr.readyState===4&&(status===200)||status====304){
       var result=JSON.parse(xhr.responseText);
